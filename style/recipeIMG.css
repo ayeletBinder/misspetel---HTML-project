@@ -1,0 +1,104 @@
+﻿/*עיצוב גריד לכל העמוד (חוץ) מהפוטר*/
+.body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows:repeat(1,1fr);
+   
+/*    height: 100vh;
+*/}
+/*עיצוב גריד פנימי של המתכונים*/
+.recipe {
+    grid-column: 3/span 8;
+    grid-row: auto/span 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1.5fr);
+}
+/*עיצוב דיב שעוטף את התמונה והכותרת של כל קוביית מתכון שבגריד*/
+    .recipe > div {
+        height: 100%;
+        width: 100%;
+    }
+/*עיצוב תמונת מתכון*/
+    .recipe img {
+        box-sizing: border-box;
+        /*   width :364px;
+    height:500px;*/
+        height: 75%;
+        width: 89%;
+        margin: 10px 25px 10px 25px;
+        min-height:559px;
+        max-height:560px;
+        object-fit:cover;
+    }
+/*עיצוב כללי לטקסט של תכותרות המתכון*/
+.description {
+    direction: rtl;
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+}
+/*עיצוב טקסט של שם המתכון */
+    .description h2 {
+        font-style: normal;
+        font-weight: 300;
+   }
+    .description h4 {
+        text-transform: uppercase;
+    }
+/*עיצוב כפתורים המשמשים למעבר לעמודים אחרים בקטגוריה*/
+.buttons a {
+    background-color: #ffe4e1;
+    color: white;
+    border-radius: 100%;
+    display: inline-block;
+    font-size: 18px;
+    width: 1%;
+    padding: 9%;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 23px; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height: 3%;
+    opacity: 0.6;
+}
+.recipe a{
+    display:inline-block;
+}
+/*עיצוב הכפתור במעבר עכבר*/
+.buttons a:hover {
+    /* background-color: #ffe4e1;
+    color: white;*/
+    background-color: white;
+    color: #ffe4e1;
+    border: 2px solid #ffe4e1;
+}
+/*מיקום כפתורי העמודים באמצע */
+.buttons{
+    text-align:center;
+}
+@media only screen and (min-width:940px ) and (max-width:1232px ) {
+    .recipe {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width:940px ) {
+    .recipe {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+/*עיצוב קישורים*/
+a{
+    text-decoration:none;
+    color:black;
+}
+/*עיצוב קישורים בעת מעבר עכבר*/
+a:hover{
+    color:black;
+}
+

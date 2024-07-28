@@ -1,0 +1,58 @@
+﻿body {
+    direction: rtl;
+    display: grid;
+    grid-template-columns: 1fr,2fr,1fr;
+    font-family: 'Assistant', sans-serif;
+    text-align: center;
+    position: relative;
+    right: 5%;
+    top: 50%;
+    margin: 20%;
+    background-color: #FFE4E1;
+}
+
+.orders {
+    width: 20%;
+    padding: 1.1%;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin: 2%;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    letter-spacing: 1px;
+    border-style: none;
+    text-decoration: initial;
+    position: relative;
+    right: 45%;
+    position: sticky;
+    top: 10%;
+    font-size: 18px;
+    font-family: 'Assistant', sans-serif;
+    z-index: 2;
+    animation-name: example; /*שם האנימציה*/
+    animation-duration: 5s; /*משך האנימציה*/
+    animation-delay: 2s;
+    animation-iteration-count: infinite; /*חזרה אינסופית של האנימציה*/
+}
+
+@keyframes example {
+    0% {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+        left: 0px;
+        top: 0px;
+    }
+
+    75% {
+        left: 0px;
+        top: 200px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    }
+}

@@ -1,0 +1,196 @@
+﻿body {
+}
+aside {
+    height: 100vh;
+    margin: unset;
+    grid-template-columns: repeat(3, 1fr);/*grid של כל הaside בתוך כל חלק יש תמונה וכיתוב*/
+    grid-template-rows: 1fr,1fr,1fr,2fr,1fr;
+    height: 100%;
+    position: center;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 4%;
+    margin-top: 5%;
+}
+
+.img-aside {
+    border: 1px, solid,#717171;
+    margin: 1%;
+}
+
+.logo {
+    width: 50%;
+    height: 45%;
+}
+/*flex בין הכיתוב לתמונה שבגריד
+*/.container-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: center;
+}
+/*הגדרות לicons*/
+.icon {
+    margin: 1%;
+    padding: 0.5%;
+    height: 52.5%;
+}
+/*.icon {
+    margin: 1%;
+    padding: 0.5%;
+    height: 52.5%;
+}*/
+/*בעת מעבר על ההיקונים יתחלף להיקונים ורודים
+*/.i1:hover {
+    content: url('../icons/icons8-facebook-f-24.png');
+}
+
+.i2:hover {
+    content: url('../icons/icons8-heart-30 (1).png');
+}
+
+.i3:hover {
+    content: url('../icons/icons8-instagram-24 (1).png');
+}
+
+.i4:hover {
+    content: url('../icons/icons8-pinterest-a-social-media-web-and-mobile-application-company-24.png');
+}
+.i5:active {
+    content: url('../icons/icons8-search-30 (1).png');
+}
+/*גריד לחלק של המתכונים הפופולרים באסיד
+*/.popular-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.font1 {
+    letter-spacing: 1px;
+    line-height: 1.9em;
+    margin: 0 0 1.4em;
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.font2 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+/*.big {
+    font-family: 'Assistant', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0px;
+}*/
+
+/*.little {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+}
+*/
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+h3 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+
+.pink {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.space {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+
+.i5 {
+    width: 30px;
+    height: 30px;
+}
+
+.numbake {
+    border-bottom: 1px solid #ddd;
+}
+
+.yy {
+    background: white;
+    z-index: 2;
+    right: 70vw;
+    position: absolute;
+    font-size: 22px;
+    padding: 1.5%;
+}
+.img_aside_div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 18vw;
+    height: 62vh;
+}
+.img_aside {
+    object-fit: cover; /*מסדר את התמונה שלא תיהיה מרוחה*/
+    width: 100%;
+    max-height: 52%;
+    min-height: 100%;
+}
+.img-article {
+    object-fit: cover;
+}
+.img-popular {
+    width: 72%;
+    height: 50%;
+    object-fit: cover;/*מסדר את התמונה שלא תיהיה מרוחה*/
+}

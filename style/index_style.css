@@ -1,0 +1,105 @@
+﻿@import url('index_style.css');
+/*עיצוב גוף העמוד */
+body {
+    direction: rtl;
+}
+/*  עיצוב התגית   שעוטפת את כל התפריט הראשי והתמונה בראש הדף-header-  */
+
+header {
+    overflow: hidden;
+}
+    /*  header עיצוב הדיב שבתןך ה*/
+    header div {
+        text-align: center;
+        margin: 3%;
+    }
+/*תמונת הלוגו*/
+img {
+    position: center;
+    width: 30%;
+}
+
+div {
+    display: block;
+}
+/*עיצוב כללי לטקסט בפרוייקט */
+body, button, input, select {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.85em;
+    line-height: 1.9;
+    letter-spacing: 0.2vw;
+}
+/*עיצוב תצוגת הרשימה של התפריט הראשי*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* border: 1px solid #e7e7e7;*/
+    background-color: white;
+    font-family: 'Alef', sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+    color: #000;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+/*עיצוב איבר ברשימה*/
+li {
+    float: right;
+}
+/* עיצוב הקישורים של התפריט הראשי*/
+ li a {
+     display: block;
+     color: black;
+     text-align: center;
+     padding: 20px 42px;
+     text-decoration: none;
+ }
+    /*  עיצוב הקישורים של התפריט הראשי בעת מעבר על הקישור*/
+ li a:hover:not(.active) {
+     background-color: #FFE4E1;
+ }
+/* עיצוב התפריט הראשי */
+.nav_container {
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+iframe {
+    margin: 0;
+    border: none;
+    /*    box-sizing:border-box;
+*/ width: 100%;
+    height: 100vh;
+    box-sizing:border-box;
+}
+/*התאמת התפריט הראשי לסדלי מסכים שונים*/
+@media only screen and (min-width:840px ) and (max-width:1076px ) {
+    ul {
+        font-size: 18px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        ul li a {
+            display: block;
+            padding: 15px 5px;
+        }
+}
+@media only screen and  (max-width:840px ) {
+    ul {
+        border:3px ,solid ,#c7c7c7;
+        font-size:15px;
+        }
+}

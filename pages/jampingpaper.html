@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../style/jamping.css" rel="stylesheet" />
+    <link href="jamping.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="../style/ProjectStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap" rel="stylesheet">
+    <link href="ProjectStyle.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>הזמנת הספר הלבן</title>
+</head>
+<body>
+    <p class="about-book">
+        בס"ד<br />
+    </p>
+    <h3 class="about-book"> "הספר הלבן"</h3>
+    <p class="about-book">
+        הוא ספר בישול, אפיה, צילום, ומה שבינהם.<br />
+        הספר נולד מתוך תשוקה לאוכל ולצילום ואחרי תקופה נפלאה של עבודה.<br />
+        הספר הלבן הוא חלום ישן שיצאתי להגשים...<br />
+        בספר תמצאו את שני העולמות מלוח\מתוק ,המשלימים זה את זה דרך מתכונים,<br />
+        אבל גם דרך צבעים, חומרי גלם, ריחות, רגשות ומצב רוח :)<br />
+        בין לבין תקבלו טיפים על תיבול, הגשה, <br />
+        וכמובן - איך לצלם את המנה כדי שכוווולם ירצו בדיוק כמו שלכם.<br />
+        שרית נובק (למי שלא מכיר)
+        מביאה את האסתטיקה יוצאת הדופן שלה,<br />
+        את הדיוק והירידה לפרטים הקטנים ביותר יחד עם היצירתיות הנונשלנטית,<br />
+        הטעמים ששייכים רק לה והניסיון רב השנים בסטודיו ובמטבח.<br />
+        "הספר הלבן" ילווה אתכם במטבח ומחוצה לו,<br />
+        ואנו מקווים שייתן לכם ידע, השראה ורעיונות ויהפוך לחבר של ממש.<br />
+        אנו מצידנו, ניתן את כל מה שיש לנו להציע - הידע, הניסיון והאהבה הגדולה לאוכל ולמטבח,<br />
+        כך שגם אלו שהמטבח אינו מקום טבעי עבורם - ירגישו בבית.<br />
+        נשמח אם תהיו חלק מהחלום שלנו ואנו חלק מהמטבח שלכם.
+    </p>
+    <button onclick="document.getElementById('id01').style.display = 'block'; document.getElementById('id02').style.display='none'" class="orders" id="id02">להזמנת הספר הלבן</button>
+
+    <div class="white-book-img modal" id="id01">
+        <form class="modal-content animate" action="finishpaper.html">
+            <div class="imgcontainer">
+                <span class="close" onclick="document.getElementById('id01').style.display = 'none'; document.getElementById('id02').style.display='block'" title="Close Modal">&times;</span>
+                <img src="../image index page/white-book-cover-400x600.png" alt="the white book" class="avatar" />
+            </div>
+            <div class="container">
+                <div class="div-orders">
+                    <p class="customers center">פרטים אישים</p>
+                    <input class="a" type="text" placeholder="שם פרטי" required name="aa" /><br />
+                    <input class="b" required type="text" placeholder="שם משפחה" value="" name="bb" /><br />
+                    <input class="c" required type="tel" placeholder="טלפון" value="" name="aba" /><br />
+                    <input class="d" required type="text" placeholder="כתובת" value="" name="aab" /><br />
+                    <input class="e" required type="text" placeholder="עיר" value="" name="baa" /><br />
+                    <input class="f" required type="email" placeholder="מייל" value="" name="abba" /><br />
+                    <p class="customers center">פרטי אשראי</p>
+                    <input required type="text" name="b" placeholder="מספר אשראי" pattern="[0-9]+" autocomplete="cc-number" maxlength="19" value="" /><br />
+                    <p class="customers1">תוקף הכרטיס</p>
+                    <input required class="d" name="v" type="month" value="" /><br />
+                    <input required name="lxs" type="text" placeholder="מספר זהות של בעל הכרטיס" value="" />
+                    <p class="customers center1">
+                        לידיעתך, התשלום יתבצע בעת קבלת המישלוח.<br />
+                        פרטי האשראי הינם לביטחון בלבד.
+                    </p>
+                    <button class="submit" id="submit" type="submit">אישור</button>
+                    <button class="submit" id="reset" type="reset">אפס</button>
+                </div>
+            </div>
+            <div class="container">
+            </div>
+        </form>
+    </div>
+
+    <img class="white-book-img" src="../imges orders/unnamed (1).jpg" />
+    <img class="white-book-img" src="../imges orders/unnamed (2).jpg" />
+    <img class="white-book-img" src="../imges orders/unnamed (5).jpg" />
+    <img class="white-book-img" src="../imges orders/unnamed (3).jpg" />
+    <img class="white-book-img" src="../imges orders/unnamed (4).jpg" />
+    <img class="white-book-img" src="../imges orders/unnamed.jpg" />
+</body>
+</html>
